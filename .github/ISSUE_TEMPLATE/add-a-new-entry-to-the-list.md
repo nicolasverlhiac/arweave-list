@@ -27,5 +27,5 @@ This project is a decentralized alternative to which service/app?
 
 ## Infos
 
-`Link`:
-`Image URL (more than 160px*160px)`:
+* `Project URL`:
+* `Image URL (more than 160px*160px)`:
