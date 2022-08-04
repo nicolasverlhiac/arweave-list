@@ -1,8 +1,8 @@
-name: "\U0001F41B Add a new entry to the list"
+name: "\U0001F4E8 Add a new entry to the list"
 description: Submit projects, services, apps making up the Arweave ecosytem.
-title: "\U0001F41B [NEW]: "
+title: "\U0001F4E8 [NEW]: "
 labels: []
-assignees: []
+assignees: ['nicolasverlhiac']
 body:
   - type: markdown
     attributes:
@@ -34,14 +34,19 @@ body:
     id: project-alternatives
     attributes:
       label: This project is a decentralized alternative to which service/app?
-      placeholder:  ex. Dropbox / Google Drive / Microsoft OneDrive /Box / iCloud Drive
+      placeholder:  ex. 
+        * Dropbox
+        * Evernote
+        * Notion
+        * AWS
     validations:
       required: true
   - type: dropdown
     id: project-categories
     attributes:
-      label: In which category does this project fit?
-      description: If you can't find your category, you can submit a new one.
+      label: In which category does this project fit (one or more)?
+      description: You can select several, **the first selection is considered the main category of the project**.
+      multiple: true
       options:
         - Incubator
         - Email
@@ -86,13 +91,6 @@ body:
         - dapp
         - wiki
         - investments
-  - type: input
-    id: os
-    attributes:
-      label: What operating system are you using?
-      placeholder: Mac, Windows, Linux
-    validations:
-      required: true
   - type: textarea
     id: project-logo
     attributes:
@@ -113,6 +111,20 @@ body:
       label: Permaweb link to the projet
       description: This url is the decentralized and immutable version of your user interface.
       placeholder: 'https://vrkop5oqnl2qcxs5hjw6ik7twyrpvbxo5iyyrzpnwmbgmcneae.arweave.net/rFTn9dBq9QFeX-Tpt5CvztiL6hu7qMYjl7bMCZgmkAY/'
+    validations:
+      required: false
+  - type: input
+    id: project-twitter
+    attributes:
+      label: Twitter @name 
+      placeholder: '@AkordTeam'
+    validations:
+      required: false
+  - type: input
+    id: project-discord
+    attributes:
+      label: Discord invitation link
+      placeholder: 'https://discord.com/invite/xRjSZY8bBQ'
     validations:
       required: false
   - type: checkboxes
