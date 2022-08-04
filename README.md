@@ -16,7 +16,7 @@ __(*)__: Essential component means that the project is linked to arweave in its 
 ## 📨 Help Grow the List
 
 As the __Arweave application ecosystem__ continues to grow, we need help keeping an up-to-date list. 
-In order for a project to be considered in the list, we ask that you first [submit this project](https://github.com/nicolasverlhiac/arweave-list/issues/new?assignees=nicolasverlhiac&labels=&template=add-a-new-entry-to-the-list.md&title=%5BADD%5D+Name+of+the+project).
+In order for a project to be considered in the list, we ask that you first [submit this project](https://github.com/nicolasverlhiac/arweave-list/issues/new?assignees=nicolasverlhiac&labels=&template=01-new-project-suggestion.yml&title=%F0%9F%93%A8+%5BNEW%5D%3A+).
 
 ## 👀 What does it look like?
 
