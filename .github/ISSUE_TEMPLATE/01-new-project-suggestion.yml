@@ -1,0 +1,124 @@
+name: "\U0001F41B Add a new entry to the list"
+description: Submit projects, services, apps making up the Arweave ecosytem.
+title: "\U0001F41B [NEW]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ##  Quick Checklist
+        Thank you for taking the time to submit a new arweave project! Please fill out this form as completely as possible.
+        
+        ✅ Active project
+        ✅ Projet uses arweave as an **essential component**
+        ✅ (OR) Brings visibility or allow democratization to Arweave (& its ecosystem)
+        ✅ (OR) Improves the accessibility of Arweave (development/use)
+        
+        (*): Essential component means that the project is linked to arweave in its mode of operation. Applications that only store their user UIs on the permaweb are not included in this definition.
+  - type: input
+    id: project-title
+    attributes:
+      label: What is the project’s name ?
+      placeholder: ex. ArDrive
+    validations:
+      required: true
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Please provide a short description of this project.
+      placeholder: ex. ArDrive offers never-ending storage of your most valuable files. Pay once and save your memories forever.
+    validations:
+      required: true
+  - type: textarea
+    id: project-alternatives
+    attributes:
+      label: This project is a decentralized alternative to which service/app?
+      placeholder:  ex. Dropbox / Google Drive / Microsoft OneDrive /Box / iCloud Drive
+    validations:
+      required: true
+  - type: dropdown
+    id: project-categories
+    attributes:
+      label: In which category does this project fit?
+      description: If you can't find your category, you can submit a new one.
+      options:
+        - Incubator
+        - Email
+        - Social
+        - NFT
+        - Publishing
+        - DAO Tooling
+        - Developer Tooling
+        - News & Knowledge
+        - Exchange
+        - Infrastructure
+        - Analytics
+        - Wallet
+        - Storage
+  - type: dropdown
+    id: project-tags
+    attributes:
+      label: What are the tags that best describe this project?
+      multiple: true
+      options:
+        - non-custodial-wallet
+        - cross-browser
+        - free
+        - beta
+        - freemium
+        - web-app
+        - encryption
+        - open-source
+        - protocol
+        - video-plateform
+        - social-media
+        - social-network
+        - DAO
+        - music-plateform
+        - nft
+        - game
+        - cross-plateform
+        - legal
+        - smart-contract
+        - oracles
+        - database
+        - dapp
+        - wiki
+        - investments
+  - type: input
+    id: os
+    attributes:
+      label: What operating system are you using?
+      placeholder: Mac, Windows, Linux
+    validations:
+      required: true
+  - type: textarea
+    id: project-logo
+    attributes:
+      label: Project logo
+      description: Drag & Drop the logo here
+    validations:
+      required: true
+  - type: input
+    id: project-link
+    attributes:
+      label: Link to the projet
+      placeholder: 'https://arweave.net/'
+    validations:
+      required: true
+  - type: input
+    id: project-link-permaweb
+    attributes:
+      label: Permaweb link to the projet
+      description: This url is the decentralized and immutable version of your user interface.
+      placeholder: 'https://vrkop5oqnl2qcxs5hjw6ik7twyrpvbxo5iyyrzpnwmbgmcneae.arweave.net/rFTn9dBq9QFeX-Tpt5CvztiL6hu7qMYjl7bMCZgmkAY/'
+    validations:
+      required: false
+  - type: checkboxes
+    id: is-owner
+    attributes:
+      label: Are you related to this project?
+      options:
+        - label:  I am related to this project
+          required: false
