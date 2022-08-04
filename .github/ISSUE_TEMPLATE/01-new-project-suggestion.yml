@@ -34,11 +34,7 @@ body:
     id: project-alternatives
     attributes:
       label: This project is a decentralized alternative to which service/app?
-      placeholder:  ex. 
-        * Dropbox
-        * Evernote
-        * Notion
-        * AWS
+      placeholder:  "ex. Dropbox / Evernote / Notion / AWS
     validations:
       required: true
   - type: dropdown
