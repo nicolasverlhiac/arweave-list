@@ -128,7 +128,7 @@ body:
     id: project-github
     attributes:
       label: Github link
-      placeholder: ''
+      placeholder: 'https://github.com/nicolasverlhiac/arweave-list/'
     validations:
       required: false
   - type: checkboxes
