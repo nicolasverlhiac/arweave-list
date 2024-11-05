@@ -57,6 +57,7 @@ body:
         - Analytics
         - Wallet
         - Storage
+        - Gaming
   - type: dropdown
     id: project-tags
     attributes:
@@ -121,6 +122,13 @@ body:
     attributes:
       label: Discord invitation link
       placeholder: 'https://discord.com/invite/xRjSZY8bBQ'
+    validations:
+      required: false
+  - type: input
+    id: project-github
+    attributes:
+      label: Github link
+      placeholder: ''
     validations:
       required: false
   - type: checkboxes
